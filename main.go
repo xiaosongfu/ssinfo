@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-const addr = ":1205"
+const addr = ":12052"
 
 const configFile = "/etc/shadowsocks.json"
 
