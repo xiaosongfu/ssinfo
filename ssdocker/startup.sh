@@ -6,4 +6,7 @@ echo "starting shadowsockets server..."
 echo "starting shadowsockets done"
 
 # start ssinfo server
+# 1 add exec permission
+chmod +x /shadowsocks/ssinfo
+# 2 start exec
 /shadowsocks/ssinfo

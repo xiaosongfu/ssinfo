@@ -7,14 +7,14 @@ import (
 	"os"
 )
 
-const addr = ":1004"
+const addr = ":1205"
 
 const configFile = "/etc/shadowsocks.json"
 
 //const configFile = "/Users/fuxiaosong/develop/go/gopath/src/ssinfo/ssdocker/shadowsocks_single_sample.json"
 
 func main() {
-	log.Println("ssinfo server start success, and listening on localhost:1205 ...")
+	log.Printf("ssinfo server start success, and listening on localhost%s ...", addr)
 
 	http.HandleFunc("/ssinfo", ssInfo)
 	err := http.ListenAndServe(addr, nil)
